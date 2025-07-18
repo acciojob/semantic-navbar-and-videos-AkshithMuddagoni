@@ -1,36 +1,76 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Semantic Navbar and Videos</title>
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        video {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	 
-	<nav>
-		<ul>
-			<li> <a href= "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">Home</a></li>
-			<li><a href = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">About us</a></li>
-			<li><a href = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4">Contact us</a></li>
-		</ul>
-	</nav>
-	<heading>3 random videos</heading>
-	<section> 
-	<video controls>
-		<source src ="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 type ="video/mp4">
-	</video>
-	<video controls>
-		<source src ="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"  type ="video/mp4">
-	</video>
-	<video controls>
-		<source src ="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type  ="video/mp4">
-	</video>
-	</section>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- ✅ Semantic Navbar -->
+    <nav>
+        <ul>
+            <li><a href="https://example.com/home">Home</a></li>
+            <li><a href="https://example.com/about">About us</a></li>
+            <li><a href="https://example.com/contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Heading -->
+    <h2>3 random videos</h2>
+
+    <!-- ✅ Videos with controls and semantic source tag -->
+    <section>
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
 
 </body>
-
 </html>
